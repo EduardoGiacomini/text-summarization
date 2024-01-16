@@ -16,7 +16,7 @@ class SpacyTextSummarizer(TextSummarizerContract):
     self.pos_tag = ['PROPN', 'ADJ', 'NOUN', 'VERB']
     self.stop_words = list(STOP_WORDS)
     self.sentences = 2
-  
+
   def summarize(self, text: str) -> str:
     doc = self.nlp(text)
 

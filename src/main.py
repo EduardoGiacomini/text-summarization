@@ -19,7 +19,7 @@ def main():
     de negócios, o aprendizado de máquina também é conhecido como análise preditiva.
   """
   text_summarized = text_summarizer.summarize(text)
-  print("Summarized text", text_summarized)
+  print("🤖 Summarized text:\n", text_summarized)
 
 
 if __name__ == '__main__':
