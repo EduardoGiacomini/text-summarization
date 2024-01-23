@@ -1,1 +1,2 @@
 from .spacy_extractive_text_summarizer import SpacyExtractiveTextSummarizer
+from .nltk_extractive_text_summarizer import NltkExtractiveTextSummarizer

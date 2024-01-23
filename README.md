@@ -16,12 +16,8 @@ Install requirements.
 
 ```bash
 pip3 install -r requirements.txt
-```
-
-Install portuguese model for Spacy.
-
-```bash
 python3 -m spacy download pt_core_news_sm
+python -m nltk.downloader punkt stopwords
 ```
 
 Run:

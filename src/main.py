@@ -1,8 +1,7 @@
-from text_summarizer import TextSummarizer, SpacyExtractiveTextSummarizer
+from text_summarizer import TextSummarizer, NltkExtractiveTextSummarizer, SpacyExtractiveTextSummarizer
 
 
 def main():
-  text_summarizer = TextSummarizer(SpacyExtractiveTextSummarizer())
   text = """
     O aprendizado de máquina (ML) é o estudo científico de algoritmos e modelos estatísticos que os
     sistemas de computador usam para melhorar progressivamente seu desempenho em uma tarefa
@@ -18,8 +17,15 @@ def main():
     exploratória de dados por meio do aprendizado não supervisionado. Na sua aplicação em problemas
     de negócios, o aprendizado de máquina também é conhecido como análise preditiva.
   """
-  text_summarized = text_summarizer.summarize(text)
-  print("🤖 Summarized text:\n", text_summarized)
+
+  nltk_extractive_text_summarizer = TextSummarizer(NltkExtractiveTextSummarizer())
+  spacy_extractive_text_summarizer = TextSummarizer(SpacyExtractiveTextSummarizer())
+
+  nltk_extractive_summary = nltk_extractive_text_summarizer.summarize(text)
+  spacy_extractive_summary = spacy_extractive_text_summarizer.summarize(text)
+  
+  print("🤖 NLTK summarized text:\n", nltk_extractive_summary)
+  print("🤖 Spacy summarized text:\n", spacy_extractive_summary)
 
 
 if __name__ == '__main__':
