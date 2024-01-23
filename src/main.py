@@ -1,8 +1,8 @@
-from text_summarizer import TextSummarizer, SpacyTextSummarizer
+from text_summarizer import TextSummarizer, SpacyExtractiveTextSummarizer
 
 
 def main():
-  text_summarizer = TextSummarizer(SpacyTextSummarizer())
+  text_summarizer = TextSummarizer(SpacyExtractiveTextSummarizer())
   text = """
     O aprendizado de máquina (ML) é o estudo científico de algoritmos e modelos estatísticos que os
     sistemas de computador usam para melhorar progressivamente seu desempenho em uma tarefa

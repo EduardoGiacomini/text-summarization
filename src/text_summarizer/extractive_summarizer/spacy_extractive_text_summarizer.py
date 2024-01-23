@@ -6,10 +6,12 @@ from heapq import nlargest
 from text_summarizer import TextSummarizerContract
 
 
-class SpacyTextSummarizer(TextSummarizerContract):
-  """SpacyTextSummarizer uses extractive summarization method: it extracts several parts, such as
-  phrases and sentences, from a piece of text, generates a keyword list based on word counting and
-  creates a summary by selecting the sentences that have the most keywords.
+class SpacyExtractiveTextSummarizer(TextSummarizerContract):
+  """
+  SpacyExtractiveTextSummarizer uses extractive summarization method: it
+  extracts several parts, such as phrases and sentences, from a piece of text,
+  generates a keyword list based on word counting and creates a summary by
+  selecting the sentences that have the most keywords.
   """
   def __init__(self) -> None:
     self.nlp = spacy.load('pt_core_news_sm')
