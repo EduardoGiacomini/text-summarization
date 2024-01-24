@@ -1,2 +1,3 @@
-from .spacy_extractive_text_summarizer import SpacyExtractiveTextSummarizer
+from .luhn_extractive_text_summarizer import LuhnExtractiveTextSummarizer
 from .nltk_extractive_text_summarizer import NltkExtractiveTextSummarizer
+from .spacy_extractive_text_summarizer import SpacyExtractiveTextSummarizer

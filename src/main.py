@@ -1,4 +1,4 @@
-from text_summarizer import TextSummarizer, NltkExtractiveTextSummarizer, SpacyExtractiveTextSummarizer
+from text_summarizer import TextSummarizer, LuhnExtractiveTextSummarizer, NltkExtractiveTextSummarizer, SpacyExtractiveTextSummarizer
 
 
 def main():
@@ -18,12 +18,15 @@ def main():
     de negócios, o aprendizado de máquina também é conhecido como análise preditiva.
   """
 
+  luhn_extractive_text_summarizer = TextSummarizer(LuhnExtractiveTextSummarizer())
   nltk_extractive_text_summarizer = TextSummarizer(NltkExtractiveTextSummarizer())
   spacy_extractive_text_summarizer = TextSummarizer(SpacyExtractiveTextSummarizer())
 
+  luhn_extractive_summary = luhn_extractive_text_summarizer.summarize(text)
   nltk_extractive_summary = nltk_extractive_text_summarizer.summarize(text)
   spacy_extractive_summary = spacy_extractive_text_summarizer.summarize(text)
   
+  print("🤖 Luhn summarized text:\n", luhn_extractive_summary)
   print("🤖 NLTK summarized text:\n", nltk_extractive_summary)
   print("🤖 Spacy summarized text:\n", spacy_extractive_summary)
 

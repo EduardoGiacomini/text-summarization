@@ -1,4 +1,3 @@
-import re
 import nltk
 import string
 import heapq

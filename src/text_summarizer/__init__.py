@@ -1,2 +1,2 @@
 from .text_summarizer import TextSummarizer, TextSummarizerContract
-from .extractive_summarizer import SpacyExtractiveTextSummarizer, NltkExtractiveTextSummarizer
+from .extractive_summarizer import LuhnExtractiveTextSummarizer, NltkExtractiveTextSummarizer, SpacyExtractiveTextSummarizer
