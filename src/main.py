@@ -3,19 +3,10 @@ from text_summarizer import TextSummarizer, LuhnExtractiveTextSummarizer, NltkEx
 
 def main():
   text = """
-    O aprendizado de máquina (ML) é o estudo científico de algoritmos e modelos estatísticos que os
-    sistemas de computador usam para melhorar progressivamente seu desempenho em uma tarefa
-    específica. Algoritmos de aprendizado de máquina constroem um modelo matemático de dados de
-    amostra, conhecidos como “dados de treinamento”, para fazer previsões ou decisões sem serem
-    explicitamente programados para executar a tarefa. Algoritmos de aprendizado de máquina são
-    utilizados nas aplicações de filtragem de e-mail, detecção de intrusos em redes e visão
-    computacional, onde é inviável desenvolver um algoritmo de instruções específicas para a
-    execução da tarefa. O aprendizado de máquina está intimamente relacionado à estatística
-    computacional, que se concentra em fazer previsões usando computadores. O estudo da otimização
-    matemática fornece métodos, teoria e domínios de aplicação ao campo do aprendizado de máquina.
-    A mineração de dados é um campo de estudo do aprendizado de máquina e se concentra na análise
-    exploratória de dados por meio do aprendizado não supervisionado. Na sua aplicação em problemas
-    de negócios, o aprendizado de máquina também é conhecido como análise preditiva.
+A progressão de carga é uma estratégia comum em periodizações de treinamento de força que visa aumentar gradativamente a intensidade do treino. A ideia por trás da progressão de carga é que, para continuar estimulando o crescimento muscular e força, é necessário fornecer uma sobrecarga progressiva nos músculos. A sobrecarga progressiva pode ser alcançada aumentando a quantidade de peso levantado, o número de séries e repetições.
+Estudos sugerem que a progressão de carga é um fator importante para o desenvolvimento da força e hipertrofia muscular, especialmente para os iniciantes na musculação. Além disso, a progressão de carga é uma estratégia segura e eficaz para prevenir lesões e melhorar a qualidade de vida em idosos (1)(2).
+Se você deseja melhorar a força e resistência muscular dos membros inferiores, uma excelente opção de exercício é o agachamento. O agachamento é um exercício composto que trabalha vários grupos musculares dos membros inferiores, incluindo quadríceps, glúteos, isquiotibiais e panturrilhas. Além disso, é um exercício funcional que pode ajudar a melhorar a sua capacidade de fazer movimentos diários com menos dificuldade, como subir escadas ou carregar as compras, o filho e até mesmo arrumar a casa arrastando os objetos pesados.
+É importante enfatizar que a progressão de carga deve ser gradual para ser segura. Se você aumentar a carga rápido demais, corre o risco de lesões, pois os tendões têm um tempo diferente dos músculos para se adaptar ao treino e o aumento de carga. É por isso que é importante trabalhar com um treinador ou personal trainer para prescrever ou planejar um programa de treinamento adequado.
   """
 
   luhn_extractive_text_summarizer = TextSummarizer(LuhnExtractiveTextSummarizer())
